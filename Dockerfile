@@ -38,7 +38,9 @@ RUN addgroup -g 1001 -S nodejs && \
 USER nodejs
 
 # Expose the port (Render will provide PORT via env variable)
-EXPOSE 3000
+EXPOSE 8080
+
+ENV PORT=8080 
 
 # Set environment to production
 ENV NODE_ENV=production
